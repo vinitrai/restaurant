@@ -1,0 +1,86 @@
+/* about us style */
+.about-section-right{
+    order:-2;
+    text-align: center;
+    gap: 1em;
+}
+.about-title{
+    color:var(--color-secondary);
+    margin-bottom:0.5em ;
+}
+
+/* chef section style */
+.chef-section{
+    text-align: center;
+}
+.chefs-container{
+    margin-top:1em;
+    padding: 0.5em;
+    gap:1em;
+}
+.chef-card{
+    background-color: white;
+    padding:0.5em;
+    border: 2px solid var(--color-secondary);
+    border-radius:8px;
+}
+.chef-pic{
+    height:250px;
+    text-align: center;
+    
+}
+.chef-pic img{
+    height:100%;
+}
+.chef-name{
+    margin:0.5em  0;
+}
+/* story section style */
+.story-title{
+   text-align: center;
+   color:var(--color-secondary);
+   margin-bottom: 0.5em;
+}
+.story-text{
+    line-height:1.2;
+    text-align: justify;
+}
+@media screen and (min-width:768px){
+    /* about us section  */
+    .about-section{
+        align-items: center;
+        gap:1em;
+    }
+    .about-text{
+        max-width:550px;
+        
+        line-height:1.2;
+        text-align: justify;
+    }
+    .about-section > *{
+        flex:1 0 48%;
+    }
+    .about-section-right{
+        order:2;
+    }
+
+    /* chefs section  */
+    .chefs-container{
+        flex-wrap: wrap;
+    }
+    .chef-name{
+        color:var(--color-secondary)
+    }
+    .chefs-container > *{
+        flex: 0 0 48%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .chefs-container {
+            flex-wrap: nowrap;
+        }
+    .chefs-container > *{
+        flex:0 0 22%;
+    }
+}

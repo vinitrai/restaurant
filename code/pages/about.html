@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="brand">
+        <i class="fa-solid fa-code-compare"></i>
+        <a href="../index.html">Developer Dude</a>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" id="showMenu"></i>
+        <i class="fa-solid fa-xmark" id="hideMenu"></i>
+      </div>
+      <div class="menu hidden">
+        <div class="nav-icons">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user" id="user"></i>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="book.html">Book Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- login modal -->
+    <div class="login modal hidden">
+      <div class="form-container">
+        <form action="#" class="modal-form">
+          <div class="headline">
+            <h2>Sign In</h2>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <fieldset>
+            <label for="emailin">Enter Your Email</label>
+            <input type="email" placeholder="E-mail" id="emailin" />
+          </fieldset>
+          <fieldset>
+            <label for="pwdin">Enter Password</label>
+            <input type="password" placeholder="password" id="pwdin" />
+          </fieldset>
+          <button type="submit">Sign In</button>
+        </form>
+        <p>Forgot Password?</p>
+        <p>Don't have an account? <a href="#" id="signUpLink">Sign Up</a></p>
+      </div>
+    </div>
+
+    <!-- signup modal -->
+    <div class="signup modal hidden">
+      <div class="form-container">
+        <form action="#" class="modal-form">
+          <div class="headline">
+            <h2>Sign Up</h2>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <fieldset>
+            <label for="nameup">Enter Full Name</label>
+            <input type="text" placeholder="Full Name" id="nameup" />
+          </fieldset>
+          <fieldset>
+            <label for="emailup">Enter E-Mail</label>
+            <input type="email" placeholder="E-Mail" id="emailup" />
+          </fieldset>
+          <fieldset>
+            <label for="pwdup">Create Password</label>
+            <input type="password" id="pwdup" />
+          </fieldset>
+          <fieldset>
+            <label for="pwd2up">Confirm Password</label>
+            <input type="password" id="pwd2up" />
+          </fieldset>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="signInLink">Sign In</a></p>
+      </div>
+    </div>
+    <main>
+      <!-- about us section  -->
+      <section class="about-section flex container">
+        <div class="about-section-left">
+          <h1 class="about-title">About Us</h1>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            possimus commodi perferendis expedita natus magnam numquam! Harum
+            ullam veniam animi nihil, repellendus illo qui maxime temporibus
+            quibusdam, quae nobis officia.
+          </p>
+        </div>
+        <div class="about-section-right">
+          <img
+            src="../images/pizz-removebg-preview.png"
+            alt="a pizza cook illustration"
+          />
+        </div>
+      </section>
+
+      <!-- our chefs section  -->
+      <section class="chef-section container">
+        <h2 class="chef-section-title">Our Golden Chefs</h2>
+        <div class="chefs-container flex">
+          <div class="chef-card">
+            <div class="chef-pic">
+              <img
+                src="../images/chef1-removebg-preview.png"
+                alt="a chef image"
+              />
+            </div>
+
+            <h3 class="chef-name">Chef Name</h3>
+            <p class="chef-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sed
+              Explicabo nulla.
+            </p>
+          </div>
+          <div class="chef-card">
+            <div class="chef-pic">
+              <img
+                src="../images/chef2-removebg-preview.png"
+                alt="a chef image"
+              />
+            </div>
+
+            <h3 class="chef-name">Chef Name</h3>
+            <p class="chef-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sed
+              Explicabo nulla.
+            </p>
+          </div>
+          <div class="chef-card">
+            <div class="chef-pic">
+              <img
+                src="../images/chef3-removebg-preview.png"
+                alt="a chef image"
+              />
+            </div>
+
+            <h3 class="chef-name">Chef Name</h3>
+            <p class="chef-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sed
+              Explicabo nulla.
+            </p>
+          </div>
+          <div class="chef-card">
+            <div class="chef-pic">
+              <img
+                src="../images/chef4-removebg-preview.png"
+                alt="a chef image"
+              />
+            </div>
+
+            <h3 class="chef-name">Chef Name</h3>
+            <p class="chef-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sed
+              Explicabo nulla.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- our story section -->
+      <section class="story-section container">
+        <h2 class="story-title">Our Story</h2>
+        <p class="story-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nam
+          modi in sapiente velit illo eveniet, voluptatum reiciendis hic ipsum
+          molestiae, voluptates ipsa voluptatem soluta quae repudiandae maiores!
+          Deleniti, eum. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. At rerum vero fuga excepturi, beatae ut pariatur dolor nulla
+          reprehenderit ex reiciendis, libero recusandae nisi officiis porro
+          perspiciatis facere quisquam voluptatum.
+        </p>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="footer-one">
+        <h4>
+          <i class="fa-solid fa-code-compare"></i>
+          Developer Dude
+        </h4>
+        <address>
+          Ground Floor
+          <br />
+          Radha printing press
+          <br />
+          Gokul Krishna Ashram Road
+          <br />
+          Near 4 star cinema br Purnea Bihar
+        </address>
+      </div>
+      <div class="footer-two">
+        <div class="footer-logo">
+          <i class="fa-solid fa-code-compare"></i>
+        </div>
+        <p>powered by Developer Dude</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

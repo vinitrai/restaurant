@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/food.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Food Page</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="brand">
+        <i class="fa-solid fa-code-compare"></i>
+        <a href="../index.html">Developer Dude</a>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" id="showMenu"></i>
+        <i class="fa-solid fa-xmark" id="hideMenu"></i>
+      </div>
+      <div class="menu hidden">
+        <div class="nav-icons">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user" id="user"></i>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Food Menu</a></li>
+            <li><a href="book.html">Book Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- login modal -->
+    <div class="login modal hidden">
+      <div class="form-container">
+        <form action="#" class="modal-form">
+          <div class="headline">
+            <h2>Sign In</h2>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <fieldset>
+            <label for="emailin">Enter Your Email</label>
+            <input type="email" placeholder="E-mail" id="emailin" />
+          </fieldset>
+          <fieldset>
+            <label for="pwdin">Enter Password</label>
+            <input type="password" placeholder="password" id="pwdin" />
+          </fieldset>
+          <button type="submit">Sign In</button>
+        </form>
+        <p>Forgot Password?</p>
+        <p>Don't have an account? <a href="#" id="signUpLink">Sign Up</a></p>
+      </div>
+    </div>
+
+    <!-- signup modal -->
+    <div class="signup modal hidden">
+      <div class="form-container">
+        <form action="#" class="modal-form">
+          <div class="headline">
+            <h2>Sign Up</h2>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <fieldset>
+            <label for="nameup">Enter Full Name</label>
+            <input type="text" placeholder="Full Name" id="nameup" />
+          </fieldset>
+          <fieldset>
+            <label for="emailup">Enter E-Mail</label>
+            <input type="email" placeholder="E-Mail" id="emailup" />
+          </fieldset>
+          <fieldset>
+            <label for="pwdup">Create Password</label>
+            <input type="password" id="pwdup" />
+          </fieldset>
+          <fieldset>
+            <label for="pwd2up">Confirm Password</label>
+            <input type="password" id="pwd2up" />
+          </fieldset>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="signInLink">Sign In</a></p>
+      </div>
+    </div>
+    <main>
+      <section class="food-section container">
+        <h1 class="food-menu">Food Menu</h1>
+        <section class="food-menu-container flex">
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff1-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff2-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff3-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff4-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff1-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff2-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff3-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff4-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff1-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff2-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff3-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-card-pic">
+              <img src="../images/ff4-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="food-card-text">
+              <h3 class="food-title">Food Name</h3>
+              <p class="food-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Enim
+                totam in.
+              </p>
+              <p class="food-price">$0.00</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="footer-one">
+        <h4>
+          <i class="fa-solid fa-code-compare"></i>
+          Developer Dude
+        </h4>
+        <address>
+          Ground Floor
+          <br />
+          Radha printing press
+          <br />
+          Gokul Krishna Ashram Road
+          <br />
+          Near 4 star cinema br Purnea Bihar
+        </address>
+      </div>
+      <div class="footer-two">
+        <div class="footer-logo">
+          <i class="fa-solid fa-code-compare"></i>
+        </div>
+        <p>powered by Developer Dude</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.book-section{
+    background-image:url('../images/hero-removebg-preview.png');
+    background-color: rgba(0,0,0,0.7);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+label{
+    color:white;
+}
+.modal-form{
+    background-color: transparent;
+}

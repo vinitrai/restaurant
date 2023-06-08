@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="brand">
+        <i class="fa-solid fa-code-compare"></i>
+        <a href="#">Dev Dude</a>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" id="showMenu"></i>
+        <i class="fa-solid fa-xmark" id="hideMenu"></i>
+      </div>
+      <div class="menu hidden">
+        <div class="nav-icons">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user" id="user"></i>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/food.html">Food Menu</a></li>
+            <li><a href="pages/book.html">Book Table</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- login modal -->
+    <div class="login modal hidden">
+      <div class="form-container">
+        <form action="#" class="modal-form">
+          <div class="headline">
+            <h2>Sign In</h2>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <fieldset>
+            <label for="emailin">Enter Your Email</label>
+            <input type="email" placeholder="E-mail" id="emailin" />
+          </fieldset>
+          <fieldset>
+            <label for="pwdin">Enter Password</label>
+            <input type="password" placeholder="password" id="pwdin" />
+          </fieldset>
+          <button type="submit">Sign In</button>
+        </form>
+        <p>Forgot Password?</p>
+        <p>Don't have an account? <a href="#" id="signUpLink">Sign Up</a></p>
+      </div>
+    </div>
+
+    <!-- signup modal -->
+    <div class="signup modal hidden">
+      <div class="form-container">
+        <form action="#" class="modal-form">
+          <div class="headline">
+            <h2>Sign Up</h2>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <fieldset>
+            <label for="nameup">Enter Full Name</label>
+            <input type="text" placeholder="Full Name" id="nameup" />
+          </fieldset>
+          <fieldset>
+            <label for="emailup">Enter E-Mail</label>
+            <input type="email" placeholder="E-Mail" id="emailup" />
+          </fieldset>
+          <fieldset>
+            <label for="pwdup">Create Password</label>
+            <input type="password" id="pwdup" />
+          </fieldset>
+          <fieldset>
+            <label for="pwd2up">Confirm Password</label>
+            <input type="password" id="pwd2up" />
+          </fieldset>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="signInLink">Sign In</a></p>
+      </div>
+    </div>
+    <main>
+      <!-- hero section -->
+      <section class="hero-section flex container">
+        <div class="hero-section__left">
+          <h1 class="hero-title">
+            Enjoy <span>Delicious Food </span> in Your Healthy Life
+          </h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolor,
+            asperiores perspiciatis harum sapiente facere non quidem
+          </p>
+          <button class="btn btn-primary">Visit Now</button>
+        </div>
+        <div class="hero-section__right">
+          <img
+            src="images/hero-removebg-preview.png"
+            alt="a food image used as hero"
+          />
+        </div>
+      </section>
+
+      <!-- featured section -->
+      <section class="featured-section flex container">
+        <!-- card-1 -->
+        <div class="featured-card">
+          <div class="card-img">
+            <img src="images/card1-removebg-preview.png" alt="a food img" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-content_title">Food Name</h3>
+            <p class="card-content_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn btn-secondary">See More</button>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="featured-card">
+          <div class="card-img">
+            <img src="images/card2-removebg-preview.png" alt="a food img" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-content_title">Food Name</h3>
+            <p class="card-content_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn btn-secondary">See More</button>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="featured-card">
+          <div class="card-img">
+            <img src="images/card3-removebg-preview.png" alt="a food img" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-content_title">Food Name</h3>
+            <p class="card-content_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn btn-secondary">See More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- people section -->
+      <section class="people-section flex container">
+        <div class="people-img">
+          <img src="images/whyus-removebg-preview.png" alt="" />
+        </div>
+        <div class="people-content">
+          <h2 class="people-title">Why People love us?</h2>
+          <div class="people-content-details">
+            <div class="people-content-details-img">
+              <img src="images/icon11-removebg-preview.png" alt="" />
+            </div>
+            <div class="people-content-details-text">
+              <h4 class="p-c-d-title">Choose your favorite</h4>
+              <p class="p-c-d-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi omnis quam autem saepe possimus, tempore !
+              </p>
+            </div>
+          </div>
+          <div class="people-content-details">
+            <div class="people-content-details-img">
+              <img src="images/icon22-removebg-preview.png" alt="" />
+            </div>
+            <div class="people-content-details-text">
+              <h4 class="p-c-d-title">Choose your favorite</h4>
+              <p class="p-c-d-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi omnis quam autem saepe possimus, tempore !
+              </p>
+            </div>
+          </div>
+          <div class="people-content-details">
+            <div class="people-content-details-img">
+              <img src="images/icon33-removebg-preview.png" alt="" />
+            </div>
+            <div class="people-content-details-text">
+              <h4 class="p-c-d-title">Choose your favorite</h4>
+              <p class="p-c-d-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi omnis quam autem saepe possimus, tempore !
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular section -->
+      <section class="popular-section container">
+        <h2 class="popular-title">Our Popular Food Items</h2>
+        <p class="popular-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          nesciunt odio saepe quia recusandae est quo, eveniet aspernatur
+          commodi.
+        </p>
+        <div class="popular-section-cards flex">
+          <div class="popular-card">
+            <div class="card-img">
+              <img src="images/ff1-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-content_title">Food Name</h3>
+              <p class="card-content_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span>$120.0</span>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="card-img">
+              <img src="images/ff2-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-content_title">Food Name</h3>
+              <p class="card-content_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span>$120.0</span>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="card-img">
+              <img src="images/ff3-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-content_title">Food Name</h3>
+              <p class="card-content_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span>$120.0</span>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="card-img">
+              <img src="images/ff4-removebg-preview.png" alt="a food img" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-content_title">Food Name</h3>
+              <p class="card-content_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span>$120.0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- feedback section  -->
+      <section class="feedback-section container">
+        <div class="feedback-section-left">
+          <div class="one">
+            <h2 class="feedback-title">Customer Feedback</h2>
+            <p clas="feedback-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              excepturi, fugiat in, suscipit beatae eos iusto sit asperiores
+              odit ratione commodi officia earum eum recusandae voluptatum
+              consequatur nulla unde repudiandae.
+            </p>
+          </div>
+          <div class="two">
+            <i class="fa-solid fa-code-compare"></i>
+            <div class="feedback-details">
+              <h4>Vinit Rai</h4>
+              <h5>Web Developer</h5>
+            </div>
+          </div>
+          <div class="three">
+            <div class="inner">
+              <i class="fa-solid fa-hand-peace"></i>
+              <span>68</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="inner">
+              <i class="fa-solid fa-trophy"></i>
+              <span>956</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-section-right">
+          <div class="right-box">
+            <div class="bg"></div>
+            <img src="images/chef-removebg-preview.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- subscribe section -->
+      <section class="subscribe-section container">
+        <h2 class="subscribe-text">
+          <span>Subscribe</span> <span>Newsletter</span>
+        </h2>
+        <div class="subscribe-action">
+          <input type="email" placeholder="vinit@abc.com" />
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="container">
+      <div class="footer-one">
+        <h4>
+          <i class="fa-solid fa-code-compare"></i>
+          DevDude
+        </h4>
+        <address>
+          Ground Floor
+          <br />
+          Radha printing press
+          <br />
+          Gokul Krishna Ashram Road
+          <br />
+          Near 4 star cinema br Purnea Bihar
+        </address>
+      </div>
+      <div class="footer-two">
+        <div class="footer-logo">
+          <i class="fa-solid fa-code-compare"></i>
+        </div>
+        <p>powered by Developer Dude</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

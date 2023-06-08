@@ -1,0 +1,410 @@
+/* hero section style */
+.hero-section {
+    gap: 0.5em;
+    min-height: 100vh;
+    
+}
+
+.hero-section__right {
+    order: -1;
+}
+
+.hero-title span {
+    color: var(--color-primary-dark);
+}
+
+.hero-text {
+    margin: 1em 0;
+}
+
+/* featured section  */
+.featured-section {
+    background-color: white;
+    gap: 0.5em;
+    align-items: center;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.featured-card {
+    padding: 0.5em;
+}
+
+.card-img {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    padding: 0.5em;
+}
+
+.card-content_text {
+    margin: 0.5em 0;
+}
+
+.people-img {
+    width: 100%;
+    height: 200px;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+.people-title {
+    margin-bottom: 0.5em;
+}
+
+.people-content-details {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.people-content-details-img {
+    flex: 1 0 20%;
+    height: 80px;
+    border-radius: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.people-content-details-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.p-c-d-title {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+
+/* popular section  */
+.popular-section {
+    text-align: center;
+
+}
+
+.popular-title {
+    margin-bottom: 0.5em;
+
+}
+
+.popular-text {
+    margin-bottom: 1.5em;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.popular-section-cards {
+    background-color: var(--color-primary-dark);
+    gap: 0.5em;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.popular-card {
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+.popular-section span {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* feedback section */
+.feedback-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.feedback-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.feedback-title,
+.feedback-text {
+    margin-bottom: 0.5em;
+}
+
+.feedback-details h5 {
+    color: var(--color-secondary)
+}
+
+.two {
+    display: flex;
+    gap: 0.5em
+}
+
+.three {
+    display: flex;
+    background-color: var(--color-primary-dark);
+    padding: 0.5em;
+    border-radius: 4px 24px 4px 4px;
+}
+
+.inner {
+    flex: 1;
+    display: flex;
+    gap: 0.5em;
+}
+
+.inner span {
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.inner p {
+    display: none;
+}
+
+.feedback-section-right {
+    order: -2;
+    height: 350px;
+}
+
+.right-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bg {
+    height: 80%;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    position: absolute;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
+    bottom: 0;
+}
+
+.right-box img {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+}
+
+/* subscribe section  */
+
+.subscribe-section {
+    text-align: center;
+}
+
+.subscribe-section span:nth-child(2) {
+    color: var(--color-primary-dark)
+}
+
+.subscribe-text {
+    margin-bottom: 0.5em;
+}
+
+.subscribe-action {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.subscribe-action input,
+button {
+    outline: none;
+    border: none;
+}
+
+.subscribe-action input {
+    text-indent: 0.5em;
+    background-color: var(--color-secondary);
+}
+
+.subscribe-action button {
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* responsive style */
+/* tablet screen */
+@media screen and (min-width:250px) {
+    .people-img {
+        height: 300px;
+        margin: 1em auto;
+    }
+}
+
+@media screen and (min-width:350px) {
+    .people-img {
+        height: 350px;
+        margin-bottom: 1em;
+    }
+}
+@media screen and (min-width:450px) {
+    .people-img {
+        height: 450px;
+    }
+    .people-content-details-img {
+        height: 100px;
+    }
+
+    .feedback-section-right {
+        height: 450px;
+
+    }
+}
+@media screen and (min-width:550px) {
+    .people-content-details-img {
+
+        height: 120px;
+    }
+    .feedback-section {
+        gap: 2em;
+    }
+    .feedback-section-left {
+        gap: 1em;
+    }
+
+}
+@media screen and (min-width:768px) {
+   .hero-section {
+        gap: 1em;
+        align-items: center;
+    }
+    .hero-section>* {
+        flex: 1;
+    }
+
+    .hero-section__right {
+        order: 1;
+    }
+
+    .featured-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .featured-card {
+        flex-basis: calc(50% - 1em);
+
+    }
+
+    .people-img {
+        flex: 1 0 50%;
+    }
+
+    .people-content-details-img {
+        flex: 1 0 30%;
+    }
+
+    .popular-section-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5em 1em;
+    }
+
+    .popular-card {
+        flex: 0 1 40%;
+        position: relative;
+        top: -1.25em;
+    }
+
+    .popular-text {
+        margin-bottom: 2.5em;
+    }
+
+    .featured-section>* {
+        flex: 1
+    }
+
+    .inner p {
+        display: inline;
+    }
+
+    .subscribe-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .subscribe-text {
+        flex: 1 1 40%;
+        text-align: left;
+    }
+
+    .subscribe-action {
+        flex: 1 1 60%;
+    }
+
+    .subscribe-action input {
+        width: 100%;
+    }
+
+   
+}
+@media screen and (min-width:992px) {
+    .featured-section {
+        flex-wrap: nowrap;
+    }
+
+    .featured-card {
+        flex-basis: calc(33% - 1em);
+    }
+
+    .people-content-details-img {
+        flex: 1 0 20%;
+    }
+
+    .popular-card {
+        flex: 0 1 23%;
+        position: relative;
+        top: -1.75em;
+    }
+
+    .popular-text {
+        margin-bottom: 3.5em;
+    }
+
+    .feedback-section {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .feedback-section-left {
+        gap: 2em;
+    }
+
+    .feedback-section-left {
+        flex: 1 1 60%;
+        padding: 0 1em
+    }
+
+    .feedback-section-right {
+        order: 2;
+        flex: 1 1 40%
+    }
+
+    .subscribe-text {
+        display: flex;
+        flex-direction: column;
+
+        text-align: right;
+        padding-right: 2em;
+    }
+
+    .subscribe-action input {
+        width: 80%;
+    }
+
+   
+}
